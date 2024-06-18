@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfDemNozdrin.Views.Requests.ReportForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDemNozdrin.Views.Requests"
+        mc:Ignorable="d"
+        Title="Окно создания отчёта" Height="402" Width="287">
+    <StackPanel Margin="10">
+        <Label Content="Затраченное время:"/>
+        <TextBox x:Name="timeSpentTextBox"/>
+
+        <Label Content="Использованные материалы:"/>
+        <TextBox x:Name="usedMaterialsTextBox"/>
+
+        <Label Content="Стоимость работы ₽:"/>
+        <TextBox x:Name="costTextBox"/>
+
+        <Label Content="Причина неисправности:"/>
+        <TextBox x:Name="faultReasonTextBox"/>
+
+        <Label Content="Оказанная помощь:"/>
+        <TextBox x:Name="assistanceProvidedTextBox"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Сохранить" Margin="5" Click="SaveButton_Click"/>
+            <Button Content="Отмена" Margin="5" Click="CancelButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>

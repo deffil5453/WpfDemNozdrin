@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfDemNozdrin.Views.Requests.ReportViewForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDemNozdrin.Views.Requests"
+        mc:Ignorable="d"
+        Title="Просмотр отчёта" Height="450" Width="250">
+    <StackPanel>
+        <Label Content="Затраченное время:" Width="237"/>
+        <TextBlock x:Name="timeSpentTextBlock" Width="237"/>
+
+        <Label Content="Использованные материалы:" Width="237"/>
+        <TextBlock x:Name="usedMaterialsTextBlock" Width="237"/>
+
+        <Label Content="Стоимость работы ₽:" Width="237"/>
+        <TextBlock x:Name="costTextBlock" Width="237"/>
+
+        <Label Content="Причина неисправности:" Width="237"/>
+        <TextBlock x:Name="faultReasonTextBlock" Width="237"/>
+
+        <Label Content="Оказанная помощь:"  Width="237"/>
+        <TextBlock x:Name="assistanceProvidedTextBlock" Width="237"/>
+
+        <Button Content="Закрыть" Click="CloseButton_Click" Width="80"/>
+    </StackPanel>
+</Window>

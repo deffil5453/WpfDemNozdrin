@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfDemNozdrin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDemNozdrin"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Login" Width="100"   Height="50" Margin="142,149,422,185" Content="Войти" Click="Login_Click"/>
+        <Button x:Name="Register" Width="100" Height="50" Margin="436,149,71,185" Content="Регистрация" Click="Register_Click"/>
+    </Grid>
+</Window>
